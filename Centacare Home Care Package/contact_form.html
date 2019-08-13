@@ -1,0 +1,137 @@
+<?php
+/**
+ * Template Name: Centacare Home Safety Funding
+ */
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Centacare Home Safety Funding </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="function.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <img src="Images/home-care-packages-banner.jpg">
+  </header>
+
+<article>
+
+      <p> Congratulations! You are eligible to be funded by Centacare's Safety Funding program.
+        To find out more about what you are eligible for, please contact your local Centacare Service on
+        <a href = 'tel: 1300236822'>1300 236 822</a>.</p>
+      <p> Please fill out the remainding information below and someone from our team will get back to you shortly.</p>
+      <p> We’re looking forward to helping you make the most of every day. </p>
+
+        <div class="formwrapper">
+            <form action="/action_page.php" target="_blank" method="post">
+                <!-- User must enter their First Name -->
+
+      <div>
+      <label class="control-label" for="firstname">
+  				First Name:
+          <span class="form-required" title="required"></span>
+			</label>
+      <input type="text"
+      required autocomplete="on"
+      name="fname"
+      placeholder="Enter First Name"
+      pattern="[A-Za-z]{1,15}"
+      title="First name should only contain letters. e.g. John" />
+                <!-- User must enter their Last Name -->
+      </div>
+<div>
+      <label class="control-label" for="lastname">
+			Last Name:
+			</label>
+      <span class="form-required" title="required"></span>
+                <input type="text"
+                required autocomplete="on"
+                name="lname"
+                placeholder="Enter Surname"
+                pattern="[A-Za-z]{1,15}"
+                title="Surname should only contain letters. e.g. Smith" />
+                <label class="control-label"
+                for="email">
+</div>
+
+<div>
+  <label class="control-label" for="suburb">
+          Suburb:
+  </label>
+  <span class="form-required" title="required"></span>
+        <form>
+          <select class="form-control" id='searchSuburb' name='suburb'></select>
+</div>
+
+<div>
+  <label class="control-label" for="suburb">
+		Eligibility:
+  </label>
+    <span class="form-required" title="required"></span>
+      <select class="form-control"
+      id='eligibility'
+      name='eligibility'
+      required autocomplete="on"
+      onClick="checkEligibility()">
+      </select>
+</div>
+
+                <!-- User will set their email address in the following field with an '@' symbol or
+			else the email address  will not successfully follow through with the user sign up -->
+<div>
+      <label class="control-label" for="email">
+				Email Address:
+			</label>
+      <span class="form-required" title="required"></span>
+    <input type="email" required autocomplete="on" name="email"
+                placeholder="example@email.com" />
+</div>
+
+<div>
+  <label class="control-label" for="phone">
+			 Mobile/Phone Number:
+			</label>
+      <span class="form-required" title="required"></span>
+
+                <input type="phone"
+                required autocomplete="on"
+                name="number"
+                pattern="^[0-9]$"
+                title="This box only accepts numbers. e.g. 1234..."
+                placeholder="0123 456 789" />
+  </div>
+<div>
+      <label class="control-label" for="textbox">
+			<p>Please let us know if you have any further questions, queries or comments below:</p>
+			</label>
+  <textarea class="commentbox"
+                name="commentbox"></textarea>
+                <!-- User will press button once sign up is complete and the fields have been
+			accepted as valid  -->
+    </div>
+
+                <div class="align">
+                    <input type="Submit" name="Submit" value="Submit"
+                    class="button"> </input>
+                    <!--<button type="submit" class="button button-block"/>Register</button>-->
+                </div>
+                <!-- End of form -->
+            </form>
+        </div>
+        </article>
+</body>
+<div class="footer">
+</div>
+</html>

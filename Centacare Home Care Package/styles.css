@@ -1,0 +1,177 @@
+/* Global Styling */
+
+/*
+REMEMBER:
+# is an id selector, used to target a single specific element with a unique id, but . is a class selector used to target multiple elements with a particular class. To put it another way:
+#foo {} will style the single element declared with an attribute id="foo"
+.foo {} will style all elements with an attribute class="foo" (you can have multiple classes assigned to an element too, just separate them with spaces, e.g. class="foo bar")
+*/
+
+html {
+  font-size: 100%;
+  line-height: 1.15;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+}
+
+body {
+    font-family: ProximaNova-Regular,Helvetica,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #5c5c5c;
+    font-size: 1.125rem;
+}
+
+.main {
+  float: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+label {
+    font-family: ProximaNova-Semibold,Helvetica,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    margin: 2rem 0 .5rem;
+    color: #5c5c5c;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #00685f;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+#next {
+  float: right;
+}
+
+#back {
+  float: left;
+}
+
+.formwrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5em;
+}
+
+.form-required {
+  /*  background-image: url("data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgd2lkdGg9IjE3OTIiIGhlaWdodD0iMTc5MiIgdmlld0JveD0iMCAwIDE3OTIgMTc5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTU0NiAxMDUwcTQ2IDI2IDU5LjUgNzcuNXQtMTIuNSA5Ny41bC02NCAxMTBxLTI2IDQ2LTc3LjUgNTkuNXQtOTcuNS0xMi41bC0yNjYtMTUzdjMwN3EwIDUyLTM4IDkwdC05MCAzOGgtMTI4cS01MiAwLTkwLTM4dC0zOC05MHYtMzA3bC0yNjYgMTUzcS00NiAyNi05Ny41IDEyLjV0LTc3LjUtNTkuNWwtNjQtMTEwcS0yNi00Ni0xMi41LTk3LjV0NTkuNS03Ny41bDI2Ni0xNTQtMjY2LTE1NHEtNDYtMjYtNTkuNS03Ny41dDEyLjUtOTcuNWw2NC0xMTBxMjYtNDYgNzcuNS01OS41dDk3LjUgMTIuNWwyNjYgMTUzdi0zMDdxMC01MiAzOC05MHQ5MC0zOGgxMjhxNTIgMCA5MCAzOHQzOCA5MHYzMDdsMjY2LTE1M3E0Ni0yNiA5Ny41LTEyLjV0NzcuNSA1OS41bDY0IDExMHEyNiA0NiAxMi41IDk3LjV0LTU5LjUgNzcuNWwtMjY2IDE1NHoiIGZpbGw9IiNhNzIzMmEiLz48L3N2Zz4=");
+*/
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    display: inline-block;
+    height: 1rem;
+    margin: 0 0 -.125rem .375rem;
+    width: 1rem;
+}
+
+
+h2 {
+    color: white;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.header {
+    background-color: #00685f;
+    width: 100%;
+    height: 50px;
+}
+
+.footer {
+    background-color: #00685f;
+    width: 100%;
+    height: 5px;
+}
+
+/* Styling table */
+
+td {
+    border: 1px #DDD solid;
+    padding: 5px;
+    cursor: pointer;
+    width: 600px;
+}
+
+tr.highlighted td {
+    background: grey;
+}
+
+.selected {
+    background-color: lightgrey;
+}
+
+/* Custom Styles */
+.button {
+    padding: 8px 20px;
+    background: #00685f;
+    color: #fff;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    text-decoration: none;
+}
+
+.buton:hover {
+    background: #00897d;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Search Information */
+.inline {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.commentbox {
+    text-align: left;
+    padding: 0.4em 0.4em 0.4em 0;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    font: normal 14px 'montserrat', sans-serif;
+}
+
+/* Additions to changing the layout of the page  */
+
+
+/* Style the header
+header {
+
+} */
+
+article {
+  float: center;
+  display: inline-block;
+  text-align: left;
+  padding: 30px;
+  width: 100%;
+
+}
+
+/* Clear floats after the columns
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Style the footer */
+footer {
+    background-color: #00685f;
+    width: 100%;
+    height: 5px;
+}
